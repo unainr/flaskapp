@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container content">
+    <h2>Image Playground</h2>
+
+    <div id="uploader" class="uploader">
+        <input type="file" id="fileInput" style="display: none;" />
+        <p id="uploadText">Drag & drop an image here or click to upload</p>
+    </div>
+
+    <div id="loader" class="loader">Uploading...</div>
+
+    <!-- Image Container -->
+    <div class="image-container">
+        <!-- Main Uploaded Image Box -->
+        <div id="uploadedImage" class="image-box">
+            <p>No image uploaded yet.</p>
+        </div>
+
+        <!-- Processed Image Box -->
+        <div id="processedImage" class="image-box">
+            <p>No processed image yet.</p>
+        </div>
+    </div>
+
+    <div id="processingActions" class="processing-actions">
+        <button onclick="processImage('remove_bg')">Remove Background</button>
+        <button onclick="processImage('resize')">Resize to 50x50</button>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="home-container">
+    <div class="hero">
+        <h1>Welcome to iImagine - Image AI</h1>
+        <p>This is an image manipulation app where you can upload images and perform actions like removing backgrounds or resizing the images.</p>
+        <a href="/playground" class="cta-button">Go to Playground</a>
+    </div>
+   
+</section>
+
+<div class="features-section">
+    <h2 class="section-title">How to Use?</h2>
+    <div class="features-container">
+        <div class="feature-card">
+            <img src="https://images.pexels.com/photos/5473955/pexels-photo-5473955.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Upload Images" class="feature-image">
+            <h3>Upload Images</h3>
+            <p>Upload images directly from your computer.</p>
+        </div>
+        <div class="feature-card">
+            <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Remove Background" class="feature-image">
+            <h3>Remove Background</h3>
+            <p>Remove background from any image with ease.</p>
+        </div>
+        <div class="feature-card">
+            <img src="https://images.pexels.com/photos/6153354/pexels-photo-6153354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Resize Image" class="feature-image">
+            <h3>Resize Images</h3>
+            <p>Resize images to custom dimensions.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Additional section can be added here -->
+<div class="extra-section">
+    <h2>Additional Features</h2>
+    <p>More advanced functionalities coming soon...</p>
+</div>
+
+
+{% endblock %}
